@@ -28,11 +28,29 @@ body {
 }
 
 .movie-container {
-  height: 440px;
+  height: auto;
   width: 25%;
 }
 
 .movie-poster {
   width: 100%;
   height: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  .movie-container {
+    width: 33.3333%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .movie-container {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .movie-container {
+    width: 100%;
+  }
 }
