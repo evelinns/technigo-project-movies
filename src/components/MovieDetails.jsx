@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -22,9 +23,12 @@ export const MovieDetails = () => {
   console.log(movieDetails)
 
   return (
-    <>
+    <div className="background" style={{
+      backgroundImage: `url(https://image.tmdb.org/t/p/original/${movieDetails.backdrop_path})`
+    }}>
+      <Link to="/">Movies</Link>
       <h1>Movie Details</h1>
       {movieDetails.original_title}
-    </>
+    </div>
   )
 }

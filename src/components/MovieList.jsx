@@ -18,16 +18,17 @@ export const MovieList = () => {
     fetchMovies();
   }, [])
 
+  console.log(movies)
+
   return <div className="movie-list">
-    <h1>Top Movies</h1>
-    <div>
     {movies.map((movie) => (
-      <div className='movie-container' key={movie.id}>
-        <Link to={`/movie/${movie.id}`}>
+        <Link className='movie-container' to={`/movie/${movie.id}`} key={movie.id}>
            <img className='movie-poster' src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} />
+          <div className='movie-details'>
+            <h3>{movie.original_title}</h3>
+            <p>Released: {movie.release_date}</p>
+          </div>
         </Link>
-      </div>
     ))}
-    </div>
   </div>
 }
