@@ -1,24 +1,12 @@
 # Movies
 
-Replace this readme with your own information about the project. You can include things like:
+Project to display movies from an API.
 
-- Brief description of the assignment
-- How you approached the task, what tools and techniques you used, and how you planned it
-- If you had more time, what would be next?
-- How to run the project locally
+- Goal is to build this using React and Routes to take the user to the movie detials page for the selected movie.
+- Started by setting up the base for the project and making sure I was able to accurately pull the movie details and redirect to the correct movie details upon clicking of a title.
+- If Ih ad more time I would have added more animations on actions and implemented an error page for if a user were to enter a URL that does not exist.
+- To run locally, npm i && code . && npm run dev
 
 ## View it live
 
 https://technigo-movie-library.netlify.app/
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
